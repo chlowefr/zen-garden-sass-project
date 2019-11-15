@@ -39,29 +39,49 @@ h2 {
 }
 
 #zen-summary {
-  height: 50vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 #zen-summary p:nth-child(1) {
-  font-family: "Helvetica" !important;
+  font-family: "DM Serif Display" !important;
+  font-size: 30px;
+  padding: 0 300px;
+  text-align: center;
+}
+#zen-summary p:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
+  line-height: 50px;
+  position: relative;
 }
 #zen-summary p:nth-child(2) a {
-  padding: 15px 25px;
+  padding: 0px 25px;
   border-radius: 50px;
   font-size: 15px;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
+  position: absolute;
 }
 #zen-summary p:nth-child(2) a:nth-child(1) {
   background-color: #00996C;
+  display: flex;
+  align-self: flex-start;
+  top: 50px;
+  left: 10%;
 }
 #zen-summary p:nth-child(2) a:nth-child(2) {
   background-color: #255852;
+  display: flex;
+  align-self: flex-end;
+  top: 50px;
+  right: 10%;
 }
 #zen-summary p:nth-child(2) a:hover {
   background: #0E1E24;
