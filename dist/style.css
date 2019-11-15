@@ -27,9 +27,15 @@ h2 {
   font-weight: 200;
 }
 
+h3 {
+  font-size: 35px;
+  font-weight: 200;
+}
+
 /*MODIFS SECTION 1 HOME*/
 .intro header {
   background-image: url(img/bg-home.png);
+  background-position-x: right;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -38,8 +44,33 @@ h2 {
   color: white;
 }
 
+.viewall {
+  position: absolute;
+  top: 70%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  left: 0;
+}
+.viewall a {
+  text-decoration: none !important;
+  color: #0E1E24;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px 30px;
+  border-radius: 25px;
+  border: solid 3px white;
+}
+.viewall a:hover {
+  color: #255852;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: 0.5s;
+}
+
+/*MODIFS SECTION 2*/
 #zen-summary {
-  height: 60vh;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,7 +79,7 @@ h2 {
 #zen-summary p:nth-child(1) {
   font-family: "DM Serif Display" !important;
   font-size: 30px;
-  padding: 0 300px;
+  padding: 0 350px;
   text-align: center;
 }
 #zen-summary p:nth-child(2) {
@@ -87,6 +118,21 @@ h2 {
   background: #0E1E24;
   transition: 0.5s;
   color: white;
+}
+
+/*MODIFS SECTION 3*/
+#zen-preamble {
+  background-image: url(img/bg-section3.png);
+  color: white;
+  height: 40vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 800px 0 150px;
+}
+
+/*MODIFS SECTION 4*/
+#zen-supporting {
+  padding: 0px 150px 0 150px;
 }
 
 /*# sourceMappingURL=style.css.map */
