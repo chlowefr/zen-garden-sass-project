@@ -1,9 +1,16 @@
+/*INITALISATION, TEXTES, RESET CSS MANUEL PARTIEL*/
 body {
   margin: 0;
 }
 
+abbr {
+  text-decoration: none !important;
+  border-bottom: 0px !important;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: "DM Serif Display", serif;
+  margin: 0;
 }
 
 p {
@@ -11,15 +18,13 @@ p {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 90px;
   font-weight: 400;
-  margin: 0;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 200;
-  margin: 0;
 }
 
 /*MODIFS SECTION 1 HOME*/
@@ -33,6 +38,16 @@ h2 {
   color: white;
 }
 
+#zen-summary {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#zen-summary p:nth-child(1) {
+  font-family: "Helvetica" !important;
+}
 #zen-summary p:nth-child(2) a {
   padding: 15px 25px;
   border-radius: 50px;
@@ -48,41 +63,10 @@ h2 {
 #zen-summary p:nth-child(2) a:nth-child(2) {
   background-color: #255852;
 }
-#zen-summary:hover {
+#zen-summary p:nth-child(2) a:hover {
   background: #0E1E24;
-  transition: 1s;
-}
-
-/*button exemple fichier mixins*/
-.btn {
-  padding: 20px;
-  border-radius: 10px;
-  font-size: 25px;
-}
-.btn:hover {
-  background: #0E1E24;
-  transition: 1s;
-}
-.btn-dark-green {
-  background: #255852;
+  transition: 0.5s;
   color: white;
-  border: 2 px solid #0E1E24;
-  background: #00996C;
-  font-size: 30px;
-}
-.btn-light-green {
-  background: #C7E6D9;
-  color: white;
-  border: 2 px solid #0E1E24;
-  background: #00996C;
-  font-size: 30px;
-}
-.btn-green {
-  background: #00996C;
-  color: white;
-  border: 2 px solid #0E1E24;
-  background: #00996C;
-  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

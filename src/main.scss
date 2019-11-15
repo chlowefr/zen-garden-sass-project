@@ -1,23 +1,28 @@
 @import "variables.scss";
 @import "mixins.scss";
+
+/*INITALISATION, TEXTES, RESET CSS MANUEL PARTIEL*/
 body{
     margin: 0;
 }
+abbr {
+    text-decoration: none !important;
+    border-bottom: 0px !important;
+    }
 h1, h2, h3, h4, h5{
     font-family: 'DM Serif Display', serif;
+    margin: 0;
 }
 p{
     font-family: 'Helvetica';
 }
 h1{
-    font-size: 80px;
+    font-size: 90px;
     font-weight: 400;
-    margin: 0;
 }
 h2{
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 200;
-    margin: 0;
 }
 
 /*MODIFS SECTION 1 HOME*/
@@ -31,9 +36,15 @@ h2{
 }
 
 #zen-summary{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-
-
+    p:nth-child(1){
+        font-family: 'Helvetica'!important;
+    }
     p:nth-child(2){
 
         a{
@@ -51,40 +62,12 @@ h2{
             &:nth-child(2){
                 background-color: $dark-green;
             }
+            &:hover{
+                background: $dark;
+                transition: 0.5s;
+                color: $light;
+            }
         }
 
-    }
-
-    &:hover{
-        background: $dark;
-        transition: 1s;
-    }
-}
-
-/*button exemple fichier mixins*/
-
-.btn{
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 25px;
-
-    &:hover{
-        background: $dark;
-        transition: 1s;
-    }
-    &-dark-green{
-        background: $dark-green;
-        color: $light;
-        @include see-througth($green);
-    }
-    &-light-green{
-        background: $light-green;
-        color: $light;
-        @include see-througth($green);
-    }
-    &-green{
-        background: $green;
-        color: $light;
-        @include see-througth($green);
     }
 }
