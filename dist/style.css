@@ -1,11 +1,17 @@
-h1, h2, h3, h4, h5 {
-  font-family: "DM Serif Display", serif;
-}
-h1 h1, h2 h1, h3 h1, h4 h1, h5 h1 {
-  font-size: 115px;
-}
-h1 h1, h2 h1, h3 h1, h4 h1, h5 h1 {
-  font-size: 55px;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 30 |         background: $danger;
+ *    |                     ^^^^^^^
+ *    '
+ *   src/main.scss 30:21  root stylesheet */
 
-/*# sourceMappingURL=style.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 30 \2502          background: $danger;\a    \2502                      ^^^^^^^\a    \2575 \a   src/main.scss 30:21  root stylesheet";
+}

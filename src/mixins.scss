@@ -1,0 +1,5 @@
+@mixin see-througth($color){
+    border: 2 px solid $dark;
+    background: $color;
+    font-size: 30px;
+}
