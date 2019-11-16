@@ -38,17 +38,15 @@ a {
 }
 
 /*MODIFS SECTION 1 HOME*/
+/*mise en forme header*/
 .intro header {
   background-image: url(img/bg-home.png);
   background-position-x: right;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   color: white;
 }
 
+/*bouton voir plus custom*/
 .viewall {
   position: absolute;
   top: 70%;
@@ -77,15 +75,24 @@ a {
 }
 
 /*MODIFS SECTION 2*/
+/*mise en forme section2*/
+.summary, #zen-supporting #zen-benefits, .intro header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 #zen-summary {
   height: 75vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-image: url(img/bg-section2.png);
   background-size: cover;
-  background-position-x: -230px;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  /*custom paragraphe 1*/
+  /*custom paragraphe 2 + style des boutons*/
 }
 #zen-summary p:nth-child(1) {
   font-family: "DM Serif Display" !important;
@@ -156,6 +163,7 @@ a {
   /*MODIFS SECTION 4*/
   /*MODIFS SECTION 5*/
   /*MODIFS SECTION 6*/
+  /*MODIFS SECTION 7*/
 }
 #zen-supporting #zen-explanation {
   padding: 150px 150px 150px 750px;
@@ -168,8 +176,11 @@ a {
 #zen-supporting #zen-explanation p {
   color: white;
 }
+#zen-supporting .participation a {
+  color: #255852;
+}
 #zen-supporting #zen-participation {
-  padding: 150px 150px 150px 750px;
+  padding: 150px 700px 150px 150px;
   background-image: url(img/bg-section5.png);
   background-size: cover;
 }
@@ -180,15 +191,76 @@ a {
   color: #0E1E24;
 }
 #zen-supporting #zen-benefits {
-  padding: 150px 150px 150px 750px;
-  background-image: url(img/bg-section6.png);
+  background-image: url(img/bg-section6.jpg);
   background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  min-height: 350px;
+  padding: 150px 400px 150px 400px;
+  color: #0E1E24;
+  text-align: center;
 }
 #zen-supporting #zen-benefits h3 {
-  color: #0E1E24;
+  background-color: white;
+  width: 55vw;
+  text-align: center;
+  padding: 30px 30px 10px 30px;
 }
 #zen-supporting #zen-benefits p {
+  margin: 0;
+  width: 55vw;
+  background-color: white;
+  padding: 10px 30px 30px 30px;
+}
+#zen-supporting #zen-requirements {
+  background-image: url(img/bg-section7.png);
+  background-size: cover;
+  background-position: right;
+  height: 100vh;
+  padding: 100px 150px 100px 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   color: #0E1E24;
+}
+#zen-supporting #zen-requirements a {
+  color: #255852;
+}
+
+/*Modif footer*/
+.requirements {
+  position: relative;
+}
+.requirements p:nth-child(6) {
+  position: absolute;
+  bottom: -195px;
+  right: 150px;
+  color: #0E1E24;
+  text-align: right;
+  padding-left: 950px;
+  font-family: "DM Serif Display" !important;
+}
+.requirements p:nth-child(6) a {
+  color: #00996C;
+  font-family: "DM Serif Display" !important;
+  text-decoration: none;
+}
+
+footer {
+  background-image: url(img/bg-footer.png);
+  height: 320px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #FAFAFC;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer a {
+  color: #0E1E24;
+  margin: 100px 150px 0px -100px;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

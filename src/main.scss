@@ -34,15 +34,15 @@ a{
 }
 
 /*MODIFS SECTION 1 HOME*/
+/*mise en forme header*/
 .intro header{
     background-image: url(img/bg-home.png);
     background-position-x: right;
-    height: 100vh;display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
     color: $light;
+    @extend .summary;
 }
+/*bouton voir plus custom*/
 .viewall{
     position: absolute;
     top: 70%;
@@ -64,23 +64,34 @@ a{
         }
     }
 }
+
+
 /*MODIFS SECTION 2*/
+/*mise en forme section2*/
+.summary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 #zen-summary{
     height: 75vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-image: url(img/bg-section2.png);
     background-size: cover;
-    background-position-x: -230px;
-
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    
+    /*custom paragraphe 1*/
     p:nth-child(1){
         font-family: 'DM Serif Display'!important;
         font-size: 30px;
         padding: 0 350px;
         text-align: center;
     }
+
+    /*custom paragraphe 2 + style des boutons*/
     p:nth-child(2){
         display: flex;
         flex-direction: column;
@@ -149,8 +160,13 @@ a{
         }
     }
     /*MODIFS SECTION 5*/
+    .participation{
+        a{
+            color: $dark-green;
+        }
+    }
     #zen-participation{
-        padding: 150px 150px 150px 750px;
+        padding: 150px 700px 150px 150px;
         background-image: url(img/bg-section5.png);
         background-size: cover;
 
@@ -164,18 +180,90 @@ a{
     }
     /*MODIFS SECTION 6*/
     #zen-benefits{
-        padding: 150px 150px 150px 750px;
-        background-image: url(img/bg-section6.png);
+        background-image: url(img/bg-section6.jpg);
         background-size: cover;
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        min-height: 350px;
+        @extend .summary;
+        padding: 150px 400px 150px 400px;
+        color: $dark;
+        text-align: center;
 
         h3{
-            color: $dark;
+            background-color: $light;
+            width: 55vw;
+            text-align: center;
+            padding: 30px 30px 10px 30px;
         }
 
         p{
-            color: $dark;
+            margin: 0;
+            width: 55vw;
+            background-color: $light;
+            padding: 10px 30px 30px 30px;
         }
     }
 
 
+    /*MODIFS SECTION 7*/
+    #zen-requirements{
+        background-image: url(img/bg-section7.png);
+        background-size: cover;
+        background-position: right;
+        height: 100vh;
+        padding: 100px 150px 100px 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: $dark;
+
+        a{
+            color: $dark-green;
+        }
+    }
+
+
+}
+
+
+/*Modif footer*/
+
+.requirements {
+    position: relative;
+
+    p:nth-child(6){
+        position: absolute;
+        bottom: -195px;
+        right: 150px;
+        color: $dark;
+        text-align: right;
+        padding-left: 950px;
+        font-family: 'DM Serif Display'!important;
+
+        a{
+            color: $green;
+            font-family: 'DM Serif Display'!important;
+            text-decoration: none;
+        }
+    }
+
+}
+
+footer{
+    background-image: url(img/bg-footer.png);
+    height: 320px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #FAFAFC;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    a{
+    color: $dark;
+    margin: 100px 150px 0px -100px;
+    text-decoration: none;
+    }
 }
