@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5{
 }
 p{
     font-family: 'Helvetica';
+    font-size: 20px;
 }
 h1{
     font-size: 90px;
@@ -122,7 +123,6 @@ a{
 #zen-preamble{
     background-image: url(img/bg-section3.png);
     color: white;
-    height: 40vh;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 50px 50% 50px 150px;
@@ -146,6 +146,34 @@ a{
 
         p{
             color: $light;
+        }
+    }
+    /*MODIFS SECTION 5*/
+    #zen-participation{
+        padding: 150px 150px 150px 750px;
+        background-image: url(img/bg-section5.png);
+        background-size: cover;
+
+        h3{
+            color: $green;
+        }
+
+        p{
+            color: $dark;
+        }
+    }
+    /*MODIFS SECTION 6*/
+    #zen-benefits{
+        padding: 150px 150px 150px 750px;
+        background-image: url(img/bg-section6.png);
+        background-size: cover;
+
+        h3{
+            color: $dark;
+        }
+
+        p{
+            color: $dark;
         }
     }
 

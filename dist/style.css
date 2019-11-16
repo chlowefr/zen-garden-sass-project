@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5 {
 
 p {
   font-family: "Helvetica";
+  font-size: 20px;
 }
 
 h1 {
@@ -142,7 +143,6 @@ a {
 #zen-preamble {
   background-image: url(img/bg-section3.png);
   color: white;
-  height: 40vh;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 50px 50% 50px 150px;
@@ -154,6 +154,8 @@ a {
 /*MODIFS SECTION 4,5,6,7*/
 #zen-supporting {
   /*MODIFS SECTION 4*/
+  /*MODIFS SECTION 5*/
+  /*MODIFS SECTION 6*/
 }
 #zen-supporting #zen-explanation {
   padding: 150px 150px 150px 750px;
@@ -165,6 +167,28 @@ a {
 }
 #zen-supporting #zen-explanation p {
   color: white;
+}
+#zen-supporting #zen-participation {
+  padding: 150px 150px 150px 750px;
+  background-image: url(img/bg-section5.png);
+  background-size: cover;
+}
+#zen-supporting #zen-participation h3 {
+  color: #00996C;
+}
+#zen-supporting #zen-participation p {
+  color: #0E1E24;
+}
+#zen-supporting #zen-benefits {
+  padding: 150px 150px 150px 750px;
+  background-image: url(img/bg-section6.png);
+  background-size: cover;
+}
+#zen-supporting #zen-benefits h3 {
+  color: #0E1E24;
+}
+#zen-supporting #zen-benefits p {
+  color: #0E1E24;
 }
 
 /*# sourceMappingURL=style.css.map */
