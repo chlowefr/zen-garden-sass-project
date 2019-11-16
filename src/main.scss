@@ -28,6 +28,9 @@ h3{
     font-size: 35px;
     font-weight: 200;
 }
+a{
+    font-family: 'Helvetica';
+}
 
 /*MODIFS SECTION 1 HOME*/
 .intro header{
@@ -49,12 +52,8 @@ h3{
     left: 0;
     
     a{
-        text-decoration: none!important;
-        color: $dark;
+        @include btn($dark, $light);
         margin: auto;
-        background-color: rgba(255, 255, 255, 0.5);
-        padding: 10px 30px;
-        border-radius: 25px;
         border: solid 3px white;
 
         &:hover{
@@ -89,24 +88,19 @@ h3{
         position: relative;
 
         a{
-            padding: 0px 25px;
-            border-radius: 50px;
-            font-size: 15px;
-            color: $light;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: 600;
             position: absolute;
+            line-height: 25px;
 
             &:nth-child(1){
-                background-color: $green;
+                @include btn($light, $green);
                 display: flex;
                 align-self: flex-start;
                 top: 50px;
                 left: 10%;
+                
             }
             &:nth-child(2){
-                background-color: $dark-green;
+                @include btn($light, $dark-green);
                 display: flex;
                 align-self: flex-end;
                 top: 50px;

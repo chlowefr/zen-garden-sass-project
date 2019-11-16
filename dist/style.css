@@ -32,6 +32,10 @@ h3 {
   font-weight: 200;
 }
 
+a {
+  font-family: "Helvetica";
+}
+
 /*MODIFS SECTION 1 HOME*/
 .intro header {
   background-image: url(img/bg-home.png);
@@ -56,10 +60,13 @@ h3 {
 .viewall a {
   text-decoration: none !important;
   color: #0E1E24;
-  margin: auto;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: white;
   padding: 10px 30px;
-  border-radius: 25px;
+  border-radius: 30px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: auto;
   border: solid 3px white;
 }
 .viewall a:hover {
@@ -93,24 +100,32 @@ h3 {
   position: relative;
 }
 #zen-summary p:nth-child(2) a {
-  padding: 0px 25px;
-  border-radius: 50px;
-  font-size: 15px;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 600;
   position: absolute;
+  line-height: 25px;
 }
 #zen-summary p:nth-child(2) a:nth-child(1) {
+  text-decoration: none !important;
+  color: white;
   background-color: #00996C;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
   display: flex;
   align-self: flex-start;
   top: 50px;
   left: 10%;
 }
 #zen-summary p:nth-child(2) a:nth-child(2) {
+  text-decoration: none !important;
+  color: white;
   background-color: #255852;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
   display: flex;
   align-self: flex-end;
   top: 50px;
