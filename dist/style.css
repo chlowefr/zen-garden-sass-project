@@ -76,7 +76,7 @@ a {
 
 /*MODIFS SECTION 2*/
 /*mise en forme section2*/
-.summary, #zen-supporting #zen-benefits, .intro header {
+.summary, .zen-resources ul, #zen-supporting #zen-benefits, .intro header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -237,7 +237,7 @@ a {
 }
 .requirements p:nth-child(6) {
   position: absolute;
-  bottom: -195px;
+  bottom: -275px;
   right: 150px;
   color: #0E1E24;
   text-align: right;
@@ -259,11 +259,36 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-top: 100px;
 }
 footer a {
   color: #0E1E24;
   margin: 100px 150px 0px -100px;
   text-decoration: none;
+}
+
+.zen-resources {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+}
+.zen-resources h3 {
+  color: #0E1E24;
+  font-size: 20px;
+}
+.zen-resources ul {
+  flex-direction: row;
+  list-style-type: none;
+}
+.zen-resources ul li {
+  margin: 0 20px;
+}
+.zen-resources ul li a {
+  color: #0E1E24;
+  text-decoration: none;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

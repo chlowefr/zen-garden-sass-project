@@ -239,7 +239,7 @@ a{
 
     p:nth-child(6){
         position: absolute;
-        bottom: -195px;
+        bottom: -275px;
         right: 150px;
         color: $dark;
         text-align: right;
@@ -254,7 +254,6 @@ a{
     }
 
 }
-
 footer{
     background-image: url(img/bg-footer.png);
     height: 320px;
@@ -264,10 +263,41 @@ footer{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-top: 100px;
 
     a{
     color: $dark;
     margin: 100px 150px 0px -100px;
     text-decoration: none;
+    }
+}
+
+.zen-resources{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+
+    h3{
+        color: $dark;
+        font-size: 20px;
+    }
+
+    ul{
+        @extend .summary;
+        flex-direction: row;
+        list-style-type: none;
+
+        li{
+            margin: 0 20px;
+
+            a{
+                color: $dark;
+                text-decoration: none;
+                font-size: 15px;
+            }
+
+        }
     }
 }
