@@ -9,3 +9,7 @@
     font-weight: 600;
 
 }
+
+@mixin padding-sides {
+    padding: 0 150px 0 150px;
+}

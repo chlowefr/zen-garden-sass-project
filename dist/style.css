@@ -60,14 +60,14 @@ a {
 .viewall a {
   text-decoration: none !important;
   color: #0E1E24;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 10px 30px;
   border-radius: 30px;
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 600;
   margin: auto;
-  border: solid 3px white;
+  border: solid 2px white;
 }
 .viewall a:hover {
   color: #255852;
@@ -84,6 +84,7 @@ a {
   align-items: center;
   background-image: url(img/bg-section2.png);
   background-size: cover;
+  background-position-x: -230px;
 }
 #zen-summary p:nth-child(1) {
   font-family: "DM Serif Display" !important;
@@ -150,12 +151,20 @@ a {
   justify-content: center;
 }
 
-/*MODIFS SECTION 4*/
+/*MODIFS SECTION 4,5,6,7*/
 #zen-supporting {
-  padding: 0px 150px 0 150px;
+  /*MODIFS SECTION 4*/
 }
 #zen-supporting #zen-explanation {
-  margin-top: 100px;
+  padding: 150px 150px 150px 750px;
+  background-image: url(img/bg-section4.png);
+  background-size: cover;
+}
+#zen-supporting #zen-explanation h3 {
+  color: #0E1E24;
+}
+#zen-supporting #zen-explanation p {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
