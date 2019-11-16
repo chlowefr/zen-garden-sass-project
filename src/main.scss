@@ -136,7 +136,8 @@ a{
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 150px 44% 150px 150px;
+    @include padding-sides;
+    padding-right: 44%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -151,7 +152,8 @@ a{
 
     /*MODIFS SECTION 4*/
     #zen-explanation{
-        padding: 150px 150px 150px 750px;
+        @include padding-sides;
+        padding-left: 750px;
         background-image: url(img/bg-section4.png);
         background-size: cover;
 
