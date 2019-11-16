@@ -75,6 +75,8 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(img/bg-section2.png);
+  background-size: cover;
 }
 #zen-summary p:nth-child(1) {
   font-family: "DM Serif Display" !important;
@@ -127,12 +129,18 @@ h3 {
   height: 40vh;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 100px 800px 0 150px;
+  padding: 50px 50% 50px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*MODIFS SECTION 4*/
 #zen-supporting {
   padding: 0px 150px 0 150px;
+}
+#zen-supporting #zen-explanation {
+  margin-top: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
