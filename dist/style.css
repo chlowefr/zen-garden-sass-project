@@ -152,10 +152,13 @@ a {
   color: white;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 50px 50% 50px 150px;
+  padding: 150px 44% 150px 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+#zen-preamble h3 {
+  color: #acffdc;
 }
 
 /*MODIFS SECTION 4,5,6,7*/
@@ -180,7 +183,7 @@ a {
   color: #255852;
 }
 #zen-supporting #zen-participation {
-  padding: 150px 700px 150px 150px;
+  padding: 200px 700px 200px 150px;
   background-image: url(img/bg-section5.png);
   background-size: cover;
 }
