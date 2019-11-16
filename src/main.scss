@@ -244,11 +244,11 @@ a{
         color: $dark;
         text-align: right;
         padding-left: 950px;
-        font-family: 'DM Serif Display'!important;
+        font-family: 'DM Serif Display';
 
         a{
             color: $green;
-            font-family: 'DM Serif Display'!important;
+            font-family: 'DM Serif Display';
             text-decoration: none;
         }
     }
@@ -272,15 +272,58 @@ footer{
     }
 }
 
-.zen-resources{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: absolute;
-    top: 0;
+.design-selection{
+    background-color: $dark;
 
     h3{
-        color: $dark;
+        display: none;
+    }
+
+    li a:nth-child(1){
+        color: $pink;
+    }
+    li a:nth-child(2){
+        color: $green;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        ul{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            padding-left: 0;
+            
+            li{
+                a{
+                    text-decoration: none;
+                }
+                font-family: 'Helvetica';
+                color: $light-green;
+                font-size: 13px;
+                padding: 0 10px;
+            }
+        }
+
+    }
+}
+
+.design-archives{
+    display: none;
+}
+
+.zen-resources{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: $dark;
+
+    h3{
+        color: $light;
         font-size: 20px;
     }
 
@@ -293,9 +336,15 @@ footer{
             margin: 0 20px;
 
             a{
-                color: $dark;
+                color: $light;
                 text-decoration: none;
                 font-size: 15px;
+
+                &:hover{
+                    color: $light;
+                    transition: 0.5s;
+                    opacity: 0.6;
+                }
             }
 
         }
