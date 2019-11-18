@@ -301,7 +301,7 @@ footer a {
   text-decoration: none;
 }
 
-.design-archives {
+.design-archives .archives, .design-archives .next{
   display: none;
 }
 
